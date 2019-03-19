@@ -9,7 +9,7 @@ IntensityImageStudent::IntensityImageStudent(const IntensityImageStudent &other)
 	//int throwError = 0, e = 1 / throwError;
 	//TODO: Create a copy from the other object
 	int size = other.getWidth() * other.getHeight();
-	for (unsigned int i = 0; i < size; i++) {
+	for (int i = 0; i < size; i++) {
 		pixelStorage.push_back(other.getPixel(i));
 	}
 }
@@ -40,7 +40,7 @@ void IntensityImageStudent::set(const IntensityImageStudent &other) {
 	int size = other.getWidth()*other.getHeight();
 	pixelStorage.clear();
 	pixelStorage.resize(size);
-	for (unsigned int i = 0; i < size; i++) {
+	for (int i = 0; i < size; i++) {
 		pixelStorage.push_back(other.getPixel(i));
 	}
 }
