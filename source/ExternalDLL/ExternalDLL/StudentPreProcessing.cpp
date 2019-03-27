@@ -13,6 +13,7 @@ IntensityImage * StudentPreProcessing::stepToIntensityImage(const RGBImage &imag
 		auto RGBPix = image.getPixel(i); 
 		// Calculating intensity value on bases of luminance.
 		int newIntensity = static_cast<int>(0.3*RGBPix.r + 0.59*RGBPix.g + 0.11*RGBPix.b);
+		// Set the intensity value for the output image
 		output->setPixel(i, newIntensity);
 	}
 	return output;
