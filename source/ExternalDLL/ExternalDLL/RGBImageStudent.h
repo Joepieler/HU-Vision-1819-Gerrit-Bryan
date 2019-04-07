@@ -8,6 +8,7 @@
 #include "RGBImage.h"
 #include <vector>
 class RGBImageStudent : public RGBImage {
+	// 1D vector for pixel storage as mentioned in implementatieplan
 	std::vector<RGB> pixelStorage;
 public:
 
