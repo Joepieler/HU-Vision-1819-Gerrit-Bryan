@@ -9,6 +9,7 @@
 #include <vector>
 class IntensityImageStudent : public IntensityImage {
 private:
+	// 1D vector for pixel storage as mentioned in implementatieplan
 	std::vector<Intensity> pixelStorage;
 public:
 	IntensityImageStudent();
